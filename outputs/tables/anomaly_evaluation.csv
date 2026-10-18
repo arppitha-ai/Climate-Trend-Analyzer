@@ -1,0 +1,4 @@
+method,true_positives,false_positives,false_negatives,precision,recall
+flag_zscore,42,5,6,0.894,0.875
+flag_iforest,11,10,37,0.524,0.229
+flag_any,42,13,6,0.764,0.875

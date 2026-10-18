@@ -1,0 +1,7 @@
+region,variable,slope_per_decade,r_squared,p_value,kendall_tau,mk_p_value,sen_slope_per_decade,significant
+Central Plateau,temperature_c,0.284,0.675,0.0,0.648,0.0,0.279,True
+Coastal South,temperature_c,0.192,0.509,0.0,0.479,4e-06,0.193,True
+North Plains,temperature_c,0.241,0.53,0.0,0.547,0.0,0.229,True
+Central Plateau,rainfall_mm,-24.691,0.054,0.124845,-0.182,0.078269,-30.576,False
+Coastal South,rainfall_mm,61.164,0.074,0.071453,0.202,0.050411,67.564,False
+North Plains,rainfall_mm,32.339,0.043,0.1721,0.137,0.183388,34.973,False

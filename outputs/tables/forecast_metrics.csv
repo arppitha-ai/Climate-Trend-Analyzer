@@ -1,0 +1,4 @@
+region,MAE,RMSE,MAE_seasonal_naive
+Central Plateau,0.623,0.891,0.929
+Coastal South,0.51,0.657,0.789
+North Plains,0.449,0.563,0.697
