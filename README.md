@@ -75,7 +75,15 @@ python -m pytest                        # tests
 
 The seasonal robust z-score is the strongest method; Isolation Forest adds little on this data, so I report it honestly rather than hiding it. 
 
-**Forecasting:** Holt-Winters is validated on a 36-month holdout against a seasonal-naive baseline. Run `python main.py` to see metrics in `outputs/tables/forecast_metrics.csv` and `reports/climate_summary.md`.
+**Forecasting** (Holt-Winters, 36-month holdout, MAE in °C):
+
+| Region | Holt-Winters MAE | Seasonal-naive MAE |
+|---|---|---|
+| Central Plateau | 0.623 | 0.929 |
+| Coastal South | 0.510 | 0.789 |
+| North Plains | 0.449 | 0.697 |
+
+Holt-Winters beat the seasonal-naive baseline in all three regions.
 
 ## Screenshots
 ![Temperature trend](outputs/figures/01_temperature_trend.png)
@@ -84,8 +92,13 @@ The seasonal robust z-score is the strongest method; Isolation Forest adds littl
 ![Anomalies](outputs/figures/05_anomaly_detection.png)
 ![Decade comparison](outputs/figures/06_yearly_comparison.png)
 ![CO2 vs temperature](outputs/figures/07_co2_vs_temperature.png)
+![Forecast - North Plains](outputs/figures/08_forecast_north_plains.png)
 
-*(Add dashboard screenshot at `images/dashboard.png` after running Streamlit.)*
+### Dashboard
+![Dashboard](images/dashboard.png)
+![Annual rainfall](images/annual_rainfall.png)
+![Temperature anomaly](images/temperature_anomaly.png)
+![Detected anomalies](images/detected_anomalies.png)
 
 ## Key learnings
 Handling missing/impossible values; separating trend from seasonality; Mann-Kendall and Sen's slope for non-parametric trends; why anomaly detection must be detrended and seasonal; honest evaluation with a baseline; modular project design.
